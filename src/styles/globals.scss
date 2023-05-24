@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'Panton';
+    src: url('/fonts/Panton-BoldItalic.eot');
+    src: local('Panton Bold Italic'), local('Panton-BoldItalic'),
+        url('/fonts/Panton-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Panton-BoldItalic.woff2') format('woff2'),
+        url('/fonts/Panton-BoldItalic.woff') format('woff'),
+        url('/fonts/Panton-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Panton';
+    src: url('/fonts/Panton-SemiBold.eot');
+    src: local('Panton SemiBold'), local('Panton-SemiBold'),
+        url('/fonts/Panton-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Panton-SemiBold.woff2') format('woff2'),
+        url('/fonts/Panton-SemiBold.woff') format('woff'),
+        url('/fonts/Panton-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Panton';
+    src: url('/fonts/Panton-SemiBoldItalic.eot');
+    src: local('Panton SemiBold Italic'), local('Panton-SemiBoldItalic'),
+        url('/fonts/Panton-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Panton-SemiBoldItalic.woff2') format('woff2'),
+        url('/fonts/Panton-SemiBoldItalic.woff') format('woff'),
+        url('/fonts/Panton-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Panton';
+    src: url('/fonts/Panton-Bold.eot');
+    src: local('Panton Bold'), local('Panton-Bold'),
+        url('/fonts/Panton-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Panton-Bold.woff2') format('woff2'),
+        url('/fonts/Panton-Bold.woff') format('woff'),
+        url('/fonts/Panton-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Panton';
+    src: url('/fonts/Panton-Regular.eot');
+    src: local('Panton'), local('Panton-Regular'),
+        url('/fonts/Panton-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Panton-Regular.woff2') format('woff2'),
+        url('/fonts/Panton-Regular.woff') format('woff'),
+        url('/fonts/Panton-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Panton';
+    src: url('/fonts/Panton-RegularItalic.eot');
+    src: local('Panton Regular Italic'), local('Panton-RegularItalic'),
+        url('/fonts/Panton-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/Panton-RegularItalic.woff2') format('woff2'),
+        url('/fonts/Panton-RegularItalic.woff') format('woff'),
+        url('/fonts/Panton-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+ /*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+a{
+	display: inline-block;
+}
+select{
+	-webkit-appearance: none;
+    -moz-appearance: none;
+}
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: 'Panton';
+	font-weight: 600;/* основное начертание */
+	background-color: #FFFFFF;/* цвет боди */
+	min-height: 100vh;
+	color: #323232;/* основной цвет текста */
+	font-size: 18px;/* основной размер шрифта */
+	line-height: 23px;/* основноая величина между строками */
+	position: relative;
+    overflow-x: hidden;
+}
+@media (max-width: 480px){
+	body{
+		font-size: 16px;/* основной размер шрифта */
+		line-height: 21px;/* основноая величина между строками */
+	}
+}
+h2{
+    @apply text-[34px] leading-[41px] mobil:text-[28px] mobil:leading-[34px] font-bold ;
+}
+h3{
+    @apply text-[28px] leading-[36px] mobil:text-[22px] mobil:leading-[29px];
+}
+.fixed-page {
+	overflow: hidden;/* класс на боди при открытии модалки */
+}
+
+.container{
+	max-width: 1170px !important;
+	padding: 0 30px !important;
+	margin: 0 auto !important;
+}
+.mySwiper .swiper-pagination .swiper-pagination-progressbar .swiper-pagination-horizontal{
+    background: rgb(255, 255, 255) !important;
+  }
+}

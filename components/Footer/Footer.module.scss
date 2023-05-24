@@ -1,0 +1,22 @@
+.wrap{
+    @apply py-[180px] pad:py-[120px] mobil:py-[80px] flex flex-col justify-center items-center;
+    p{
+        @apply mt-[40px] mobil:mt-[30px];
+    }
+    div{
+        @apply text-[28px] leading-[36px] mobil:text-[22px] mobil:leading-[29px] mt-[20px] mobil:mt-[10px] flex gap-[10px] mobil:flex-wrap 
+        mobil:justify-center mobil:items-center;
+        span{
+            @apply font-bold;
+        }
+    }
+}
+.bottom{
+    @apply bg-[#323232] py-[31px] mobil:py-[45px];
+    >div>div{
+        @apply flex justify-between items-center mobil:flex-col;
+    }
+    p{
+        @apply text-[rgba(255,255,255,0.5)] text-[12px] leading-[18px] font-normal mobil:order-3 mobil:mt-[5px];
+    }
+}

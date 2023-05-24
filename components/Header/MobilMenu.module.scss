@@ -1,0 +1,6 @@
+.menu{
+    @apply block absolute bg-[#323232] right-0 top-[70px] p-[80px] duration-500 opacity-0 h-[100vh] pointer-events-none;
+	&.open {
+        @apply  opacity-100 duration-500 right-0 pointer-events-auto;
+    }
+}

@@ -1,0 +1,7 @@
+.overlay{
+    @apply  top-0 left-0 w-[100%] h-[100vh] bg-[rgba(0,0,0,0.5)] fixed z-50 ;
+}
+.modal{
+    @apply  absolute z-50 top-[50%] left-[50%] rounded-[5px] p-[40px_16px_35px_16px] max-w-fit bg-[#ffffff] border 
+     overflow-y-scroll max-h-[800px] notebook:max-h-[700px] pad:max-h-[700px] mobil:max-h-[700px]  max-w-[360px] ;
+}

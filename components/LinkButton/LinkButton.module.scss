@@ -1,0 +1,13 @@
+.headerPhone {
+    @apply  text-[15px] leading-[18px] text-[#FFFFFF] hover:text-[#1A81FA] duration-500 mobil:hidden whitespace-nowrap;
+ }
+.footerPhone {
+    @apply  text-[70px] leading-[91px] pad:text-[50px] pad:leading-[60px] 
+    mobil:text-[36px] mobil:leading-[40px] text-[#323232] hover:text-[#1A81FA]
+    duration-500 whitespace-nowrap mt-[10px];
+ }
+ 
+.footer {
+    @apply  text-[rgba(255,255,255,0.5)] text-[12px] leading-[18px] font-normal hover:text-[#1A81FA] duration-500 mobil:order-2 mobil:mt-[20px];
+ }
+ 

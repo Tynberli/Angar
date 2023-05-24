@@ -1,0 +1,20 @@
+.wrap{
+    @apply bg-[#] p-[220px_0_236px_0] netbook:p-[70px_0_236px_0] pad:p-[70px_0_250px_0] mobil:p-[40px_0_60px_0] bg-[url('../../public/bg-1.webp')]
+     bg-[#E0E0E0] bg-no-repeat  bg-[100%_50%] bg-cover;
+    @media (max-width: 768px){
+        @apply bg-[50%_170px];
+    }
+    @media (max-width: 480px){
+        @apply bg-[55%_100px];
+    }
+    h1{
+        @apply text-[45px] leading-[54px] mobil:text-[35px] mobil:leading-[42px] font-bold max-w-[60%];
+    }
+    p{
+        @apply mt-[30px] mobil:mt-[25px];
+    }/* 
+    button{
+        @apply mt-[65px] pad:mt-[50px] mobil:mt-[257px] text-[#ffffff] bg-[#1A81FA] rounded-[100px] p-[20px_35px] max-w-fit hover:bg-[#ffffff]
+        hover:text-[#1A81FA] duration-500 ;
+    } */
+}
