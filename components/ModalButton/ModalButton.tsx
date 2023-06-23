@@ -3,7 +3,12 @@ import PropTypes from 'prop-types';
 import Modal from './Modal';
 import styles from './ModalButton.module.scss';
 
-const ModalButton = ({ buttonText, buttonStyle, modalTitle, modalContent }) => {
+const ModalButton = ({ buttonText, buttonStyle, modalTitle, modalContent }: {
+  buttonText: string,
+  buttonStyle: string,
+  modalTitle: string,
+  modalContent: React.ReactNode
+}) => {
   const [modalOpen, setModalOpen] = useState(false);
 
   const openModal = () => {
@@ -21,7 +26,7 @@ const ModalButton = ({ buttonText, buttonStyle, modalTitle, modalContent }) => {
       </button>
       {modalOpen && (
         <Modal title={modalTitle} onClose={closeModal}>
-          {modalContent}
+              {Array.isArray(modalContent) ? modalContent : [modalContent]}
         </Modal>
       )}
     </>

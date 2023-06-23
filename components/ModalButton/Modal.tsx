@@ -2,7 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Modal.module.scss';
 
-const Modal = ({ title, onClose, children }) => {
+const Modal = ({ title, onClose, children }: {
+    title: string,
+    onClose: any,
+    children: string,
+}) => {
     return (
         <div className={styles.overlay}>
             <div className={styles.modal}>
@@ -51,7 +55,7 @@ const Modal = ({ title, onClose, children }) => {
                     </label>
                     <label className="agreement relative flex gap-8 items-center mt-[35px] ">
                         <input type="checkbox" checked className="agreement-checkbox form-check" name="" id=""
-                            onClick="check();" value="" autocomplete="on" />
+                             value=""  />
                         <span className="agreement-title form-check-span">Я согласен с обработкой
                             персональных данных и <a href="#" className="underline">политикой конфиденциальности</a>
                         </span>
