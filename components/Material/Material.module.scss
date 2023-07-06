@@ -1,0 +1,28 @@
+.material{
+    @apply bg-[#323232] relative ;
+}
+.slide__content{
+    @apply flex h-[100%] justify-between pad:flex-col-reverse mobil:flex-col-reverse items-center mobil:items-start pb-[100px];
+    .descr{
+        @apply flex flex-col;
+        h2{
+            @apply  mobil:max-w-[100%] text-[#FFFFFF]  font-bold;
+        }
+        >p{
+            @apply mt-[15px] max-w-[360px]  mobil:max-w-[284px] leading-[25px] text-[#FFFFFF];
+        }
+        .items{
+            @apply  flex mobil:flex-col gap-[10px] flex-wrap mt-[40px];
+            .item{
+                @apply flex gap-[10px] items-center p-[12px_35px_12px_22.5px] bg-[#434343] rounded-[5px] 
+                max-w-fit mobil:max-w-[284px] text-[#ffffff];
+            }
+        }
+    }
+    .picture{
+        @apply relative z-30 w-[100%];
+        img{
+            @apply w-[100%] relative z-30 ;
+        }
+    }
+}
