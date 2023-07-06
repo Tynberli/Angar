@@ -1,5 +1,8 @@
 .wrap{
     @apply py-[180px] pad:py-[120px] mobil:py-[80px] flex flex-col justify-center items-center;
+    h3{
+        @apply text-center
+    }
     p{
         @apply mt-[40px] mobil:mt-[30px];
     }

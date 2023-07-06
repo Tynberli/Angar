@@ -11,7 +11,7 @@
             background-position:  -12% 20px, 105% 125px, 5% 320px;
     }
     h2{
-        @apply max-w-[250x] pad:max-w-[100%] mobil:max-w-[100%] text-[#ffffff] text-center ;
+        @apply  text-center ;
     }
     img{
         @apply justify-center
@@ -23,10 +23,7 @@
 
 .mySwiper{
     @apply relative mt-[40px];
-    swiper-pagination swiper-pagination-progressbar swiper-pagination-horizontal
-    .swiper-pagination-progressbar{
-      @apply static;
-    }
+
      .swiper-pagination-progressbar-fill{
         background: rgb(255, 255, 255) !important;
       }
@@ -79,6 +76,13 @@
 .picture{
   @apply flex justify-end mt-[93px] pad:mt-[60px] mobil:mt-[50px];
   img{
-    @apply relative pad:left-[10%] mobil:left-[10%];
+    @apply relative pad:left-[10%];
+  }
+}
+
+.step__descr{
+  @apply flex justify-between mt-[30px] pad:hidden;
+  p{
+    @apply max-w-[160px]
   }
 }

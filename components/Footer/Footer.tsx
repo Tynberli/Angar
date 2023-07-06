@@ -11,9 +11,9 @@ const Footer = () => {
                     <h3>Закажите проект ангара уже сейчас</h3>
                     <p>Для этого позвоните по номеру</p>
                     <LinkButton
-                        buttonText="+7 800 555 85 95"
+                        buttonText="+7 800 777 14 27"
                         buttonStyle="footerPhone"
-                        textlink="tel:+78005558595" />
+                        textlink="tel:+78007771427" />
                     <div>
                         <span>или</span>
                         <ModalButton

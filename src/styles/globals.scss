@@ -147,7 +147,12 @@ h3{
 	padding: 0 30px !important;
 	margin: 0 auto !important;
 }
-.mySwiper .swiper-pagination .swiper-pagination-progressbar .swiper-pagination-horizontal{
-    background: rgb(255, 255, 255) !important;
+.mySwiper{
+    .swiper-pagination{
+        position: static !important;
+    }
+    .swiper-pagination-progressbar{
+        position: static !important;
+    }
   }
 }

@@ -97,11 +97,11 @@ export default function Steps() {
                         </div>
                     </SwiperSlide>
 
-                    <div className="flex justify-between mt-[30px]  pad:hidden mobil:hidden">
-                        <p className="max-w-[103px]">Возведение фундамента</p>
-                        <p className="max-w-[129px]">Формирование каркаса</p>
+                    <div className={styles.step__descr}>
+                        <p>Возведение фундамента</p>
+                        <p>Формирование каркаса</p>
                         <p>Обшивка</p>
-                        <p className="max-w-[166px]">Доп.борудование: двери, ворота, окна</p>
+                        <p>Доп.борудование: двери, ворота, окна</p>
                         <p>Утепление</p>
                     </div>
                 </Swiper>

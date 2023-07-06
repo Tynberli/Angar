@@ -3,21 +3,20 @@
     
 }
 .wrap{
-    @apply p-[20px_40px] notebook:p-[20px_30px] netbook:p-[20px_30px] pad:p-[20px_30px] mobil:p-[20px_30px] mx-auto flex justify-between
-    items-center netbook:items-start relative;
+    @apply p-[20px_40px] notebook:p-[20px_30px]  mx-auto flex justify-between items-center  relative;
 }
 .navigation{
     @apply duration-500;
 }
 .navigation__list{
     @apply flex netbook:flex-wrap netbook:justify-center gap-[30px] netbook:gap-[15px] items-center pad:items-start
-    mobil:items-start text-[rgba(255,255,255,0.6)] text-[15px] leading-[18px] pad:text-[18px]
-    pad:leading-[22px] mobil:text-[16px] mobil:leading-[19px] pad:flex-col mobil:flex-col;
+    text-[rgba(255,255,255,0.6)] text-[15px] leading-[18px] pad:text-[18px]
+    pad:leading-[22px] mobil:text-[16px] mobil:leading-[19px] pad:flex-col ;
 }
 .nav__link{
     @apply hover:text-[#ffffff] relative after:opacity-0 hover:after:opacity-[1] duration-500 after:absolute after:content-[''] after:bg-[#1A81FA]
     after:h-[2px] after:w-[8px] after:bottom-[-10px] after:left-[45%] after:duration-500 whitespace-nowrap pad:after:left-[-15px]
-    pad:after:bottom-[50%] mobil:after:left-[-15px] mobil:after:bottom-[50%];
+    pad:after:bottom-[50%];
 }
 .burger{
     @apply relative z-10 bg-[#434343] rounded-[5px] cursor-pointer duration-500 w-[54px] h-[40px] mobil:w-[44px] mobil:h-[34px];
