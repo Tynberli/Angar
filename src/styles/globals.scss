@@ -87,7 +87,7 @@ a:focus,a:active{outline: none;}
 nav,footer,header,aside{display: block;}
 
 html,body{
-	height: 100%;
+	height: auto;
 	width: 100%;
 	font-size: 100%;
 	line-height: 1;
@@ -120,7 +120,6 @@ body{
 	font-family: 'Panton';
 	font-weight: 600;/* основное начертание */
 	background-color: #FFFFFF;/* цвет боди */
-	min-height: 100vh;
 	color: #323232;/* основной цвет текста */
 	font-size: 18px;/* основной размер шрифта */
 	line-height: 23px;/* основноая величина между строками */

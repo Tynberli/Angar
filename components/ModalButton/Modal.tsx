@@ -45,6 +45,7 @@ const Modal = ({ title, onClose, children }: {
                             </svg></div>
                         </div>
                     </label>
+                    
                     <p className="text-[16px] leading-[21px] mt-[35px]">Габариты ангара</p>
                     <label className="text-[16px] leading-[21px] mt-[15px] grid grid-cols-2 gap-[10px]">
                         <input type="text" placeholder="Длина, м" name="Длина" className="input col-span-1 mt-0" />

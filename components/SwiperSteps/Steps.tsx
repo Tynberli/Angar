@@ -30,78 +30,73 @@ export default function Steps() {
                     <SwiperSlide>
                         <div>
                             <div
-                                className="flex flex-col gap-[10px] max-w-fit p-[25px_25px_35px_30px] rounded-[5px] bg-[#3E97FF] mx-auto">
-                                <p className="  font-bold">Возведение фундамента</p>
-                                <p className="  max-w-[389px]">В зависимости от конструкции, на
+                                className={styles.descr__step}>
+                                <p>Возведение фундамента</p>
+                                <p>В зависимости от конструкции, на
                                     данном этапе заливаются разные виды фундамента.</p>
                             </div>
-                            <div className="flex justify-end mt-[93px] pad:mt-[60px] mobil:mt-[50px]">
+                            <div className={styles.picture}>
                                 <Image width={940} height={320}
-                                    src="/step-1.webp" alt="Возведение фундамента"
-                                    className="relative pad:left-[10%] mobil:left-[10%]" />
+                                    src="/step-1.webp" alt="Возведение фундамента" />
                             </div>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div>
                             <div
-                                className="flex flex-col gap-[10px] max-w-fit p-[25px_25px_35px_30px] rounded-[5px] bg-[#3E97FF] mx-auto">
-                                <p className="  font-bold">Формирование каркаса</p>
-                                <p className="  max-w-[389px]">На установленном фундаменте возводится основная конструкция каркаса.</p>
+                                className={styles.descr__step}>
+                                <p >Формирование каркаса</p>
+                                <p >На установленном фундаменте возводится основная конструкция каркаса.</p>
                             </div>
-                            <div className="flex justify-end mt-[93px] pad:mt-[60px] mobil:mt-[50px]">
+                            <div className={styles.picture}>
                                 <Image width={940} height={320}
-                                    src="/step-2.webp" alt="Формирование каркаса"
-                                    className="relative pad:left-[10%] mobil:left-[10%]" />
+                                    src="/step-2.webp" alt="Формирование каркаса" />
                             </div>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div>
                             <div
-                                className="flex flex-col gap-[10px] max-w-fit p-[25px_25px_35px_30px] rounded-[5px] bg-[#3E97FF] mx-auto">
-                                <p className="  font-bold">Обшивка</p>
-                                <p className="  max-w-[389px]">На данном этапе на конструкцию ангара
+                                className={styles.descr__step}>
+                                <p >Обшивка</p>
+                                <p >На данном этапе на конструкцию ангара
                                     закрепляется гидроизоляция, крепится профлист.</p>
                             </div>
-                            <div className="flex justify-end mt-[93px] pad:mt-[60px] mobil:mt-[50px]">
+                            <div className={styles.picture}>
                                 <Image width={940} height={320}
-                                    src="/step-3.webp" alt="Обшивка"
-                                    className="relative pad:left-[10%] mobil:left-[10%]" />
+                                    src="/step-3.webp" alt="Обшивка" />
                             </div>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div>
                             <div
-                                className="flex flex-col gap-[10px] max-w-fit p-[25px_25px_35px_30px] rounded-[5px] bg-[#3E97FF] mx-auto">
-                                <p className="font-bold">Доп.борудование: двери, ворота, окна</p>
-                                <p className="max-w-[389px]">Устанавлиевается дополнительное
+                                className={styles.descr__step}>
+                                <p>Доп.борудование: двери, ворота, окна</p>
+                                <p >Устанавлиевается дополнительное
                                     оборудование и инженерные сети.</p>
                             </div>
-                            <div className="flex justify-end mt-[93px] pad:mt-[60px] mobil:mt-[50px]">
+                            <div className={styles.picture}>
                                 <Image width={940} height={320}
-                                    src="/step-4.webp" alt="Доп.борудование: двери, ворота, окна"
-                                    className="relative pad:left-[10%] mobil:left-[10%]" />
+                                    src="/step-4.webp" alt="Доп.борудование: двери, ворота, окна" />
                             </div>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div>
                             <div
-                                className="flex flex-col gap-[10px] max-w-fit p-[25px_25px_35px_30px] rounded-[5px] bg-[#3E97FF] mx-auto">
-                                <p className="font-bold">Утепление</p>
-                                <p className="max-w-[389px]">При необходимости, производится
+                                className={styles.descr__step}>
+                                <p >Утепление</p>
+                                <p >При необходимости, производится
                                     дополнительное утепление готового ангара.</p>
                             </div>
-                            <div className="flex justify-end mt-[93px] pad:mt-[60px] mobil:mt-[50px]">
+                            <div className={styles.picture}>
                                 <Image width={940} height={320}
-                                    src="/step-5.webp" alt="Утепление"
-                                    className="relative pad:left-[10%] mobil:left-[10%]" />
+                                    src="/step-5.webp" alt="Утепление" />
                             </div>
                         </div>
                     </SwiperSlide>
-                    
+
                     <div className="flex justify-between mt-[30px]  pad:hidden mobil:hidden">
                         <p className="max-w-[103px]">Возведение фундамента</p>
                         <p className="max-w-[129px]">Формирование каркаса</p>

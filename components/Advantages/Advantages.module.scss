@@ -1,0 +1,38 @@
+.mission{
+    @apply p-[0_0_200px_0] netbook:p-[50px_0] pad:p-[100px_0_200px_0] mobil:p-[80px_0_150px_0] relative z-0;
+    .wrapper{
+        @apply flex justify-between netbook:flex-wrap items-center relative top-[-90px] netbook:top-0;
+        h2{
+          @apply  max-w-[220px];
+        }
+        .cards{
+            @apply flex gap-[30px] netbook:mt-[30px] pad:mt-[40px] pad:overflow-x-scroll;
+            .item{
+                @apply  bg-[#F5F5F5] hover:bg-[#1A81FA] duration-500 p-[45px_35px_50px_30px] cursor-pointer rounded-[5px] flex flex-col gap-[100px] ;
+                .like{
+                    @apply p-[30px] rounded-[50%] bg-[#FFFFFF] duration-500 max-w-fit ;
+                }
+
+                p{
+                    @apply duration-500 max-w-[200px];
+                }
+
+                &:hover{
+                    .like{
+                        @apply bg-[#3E97FF];
+                    }
+                    .like svg path{
+                        @apply fill-[#FFFFFF] duration-500;
+                    }
+                    p{
+                        @apply text-[#ffffff];
+                    }
+                }
+            }
+        }
+        
+    }
+    .descr{
+            @apply text-[28px] leading-[39px] mobil:text-[22px] mobil:leading-[29px] max-w-[920px] text-center mx-auto mt-[100px] pad:mt-[120px] mobil:mt-[80px] ;
+        }
+}

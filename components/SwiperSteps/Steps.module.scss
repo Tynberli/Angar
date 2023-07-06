@@ -22,7 +22,11 @@
 }
 
 .mySwiper{
-    position: relative;
+    @apply relative mt-[40px];
+    swiper-pagination swiper-pagination-progressbar swiper-pagination-horizontal
+    .swiper-pagination-progressbar{
+      @apply static;
+    }
      .swiper-pagination-progressbar-fill{
         background: rgb(255, 255, 255) !important;
       }
@@ -54,3 +58,27 @@
   .swiper-pagination .swiper-pagination-progressbar .swiper-pagination-horizontal{
     background: rgb(255, 255, 255) !important;
   }
+  .swiper-horizontal>.swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal, .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite, .swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+    width: 100%;
+    height: var(--swiper-pagination-progressbar-size,4px);
+    left: 0;
+    top: 0;
+    position: static !important;
+}
+.descr__step{
+  @apply flex flex-col gap-[10px] max-w-fit p-[25px_25px_35px_30px] rounded-[5px] bg-[#3E97FF] mx-auto;
+  p{
+    &:not(:last-child){
+      @apply   font-bold;
+    }
+    &:not(:first-child){
+      @apply max-w-[389px];
+    }
+  }
+}
+.picture{
+  @apply flex justify-end mt-[93px] pad:mt-[60px] mobil:mt-[50px];
+  img{
+    @apply relative pad:left-[10%] mobil:left-[10%];
+  }
+}

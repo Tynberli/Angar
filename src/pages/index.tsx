@@ -5,6 +5,7 @@ import Hero from '@/../components/Hero/Hero';
 import Advantages from '@/../components/Advantages/Advantages';
 import Footer from '@/../components/Footer/Footer';
 import Steps from '@/../components/SwiperSteps/Steps';
+import Warming from '../../components/warming/Warming';
 export default function Home() {
   return (
     <>
@@ -17,6 +18,7 @@ export default function Home() {
       <main>
         <Hero />
         <Advantages />
+        {/* <Warming/> */}
         <Steps/>
       </main>
       <Footer/>
