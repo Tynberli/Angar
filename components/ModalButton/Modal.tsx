@@ -5,7 +5,7 @@ import styles from './Modal.module.scss';
 const Modal = ({ title, onClose, children }: {
     title: string,
     onClose: any,
-    children: string,
+    children: any,
 }) => {
     return (
         <div className={styles.overlay}>
