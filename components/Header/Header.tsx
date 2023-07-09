@@ -121,9 +121,9 @@ const Header = () => {
                 </nav>
                 <div className={styles.contact}>
                     <LinkButton
-                        buttonText="+7 800 555 85 95"
+                        buttonText="+7 800 777 14 27"
                         buttonStyle="headerPhone"
-                        textlink="tel:+78005558595" />
+                        textlink="tel:+78007771427" />
                     <ModalButton
                         buttonText="Оставить заявку"
                         buttonStyle="headerOrder"

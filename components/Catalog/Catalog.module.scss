@@ -1,0 +1,24 @@
+.tabs{
+    @apply  flex justify-center mt-[50px] gap-[80px] pad:gap-[60px] mobil:gap-[30px] 
+    pad:overflow-x-auto mobil:overflow-x-auto pad:ml-[30px] mobil:ml-[30px] pad:justify-start mobil:justify-start;
+    li{
+        @apply relative after:hidden duration-500 after:absolute after:content-[''] after:bg-[#1A81FA]
+        after:h-[2px] after:w-[16px] after:bottom-[-20px] after:left-[45%] after:duration-500  whitespace-nowrap cursor-pointer;
+        
+    }
+    li.active{
+            @apply text-[#1A81FA] font-bold  after:block mobil:after:hidden;
+        }
+}
+
+.angar_cards{
+    @apply bg-[rgba(50,50,50,0.05)] mt-[20px] p-[70px_0_50px_0];
+    .wrap{
+        @apply grid grid-cols-12 pad:grid-cols-8 mobil:grid-cols-4 gap-[30px];
+    }
+    
+}
+.showMoreButton{
+    @apply mt-[65px] pad:mt-[50px]  text-[#ffffff] bg-[#1A81FA] rounded-[100px] p-[20px_35px] max-w-fit hover:bg-[#ffffff]
+     hover:text-[#1A81FA] duration-500 mx-auto block
+}

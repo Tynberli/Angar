@@ -1,0 +1,18 @@
+.card{
+	@apply rounded-[10px] bg-[#ffffff] p-[27.5px_25px_30px] col-span-4  shadow-[5px_5px_5px_rgba(0,0,0,0.25)] ;
+	.picture{
+		@apply flex justify-center items-center max-w-[190px] mx-auto;
+	}
+	h4{
+		@apply mt-[55px];
+	}
+	.parametres{
+		@apply text-[20px] leading-[28px];
+	}
+	.price{
+		@apply text-[24px] leading-[31px] font-bold mt-[18px];
+	}
+	.installation{
+		@apply text-[rgba(50,50,50,0.5)] text-[16px] leading-[22px] mt-[2px];
+	}
+}

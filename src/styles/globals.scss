@@ -138,6 +138,9 @@ h2{
 h3{
     @apply text-[28px] leading-[36px] mobil:text-[22px] mobil:leading-[29px];
 }
+h4{
+    @apply text-[20px] leading-[28px];
+}
 .fixed-page {
 	overflow: hidden;/* класс на боди при открытии модалки */
 }
