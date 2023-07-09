@@ -1,4 +1,8 @@
 .logo{
     @apply uppercase text-[#FFFFFF] text-[19px] leading-[22px] pad:text-[17px] pad:leading-[19px]
-    mobil:text-[14px] mobil:leading-[17px] tracking-[3px] hover:text-[#1A81FA] duration-500;
+    /* mobil:text-[14px] mobil:leading-[17px] */ tracking-[3px] hover:text-[#1A81FA] duration-500;
+    @media (max-width: 480px) {
+        font-size: 14px;
+        line-height: 17px;
+    }
 }
