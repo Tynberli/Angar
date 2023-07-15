@@ -35,13 +35,13 @@
     }
 }
 .burger.open span:nth-child(1){
-        @apply  top-[46%] rotate-[45deg];
+        @apply top-[46%] rotate-[45deg];
     }
 .burger.open span:nth-child(2){
-        @apply   opacity-0;
+        @apply  opacity-0;
     }
 .burger.open span:nth-child(3){
-        @apply  bottom-[48%] rotate-[-45deg];
+        @apply bottom-[48%] rotate-[-45deg];
     }
 
 .contact{

@@ -1,4 +1,3 @@
-import Head from 'next/head'
 
 import Hero from '@/../components/Hero/Hero';
 import Advantages from '@/../components/Advantages/Advantages';
@@ -10,12 +9,7 @@ import Layout from '@/../components/Layout/Layout';
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Profi-Angar</title>
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </Head>
-      <Layout>
+      <Layout metaTitle={'123'} metaDescr='asd'>
         <main>
           <Hero />
           <Advantages />

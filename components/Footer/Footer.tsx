@@ -1,6 +1,7 @@
 import ModalButton from "../ModalButton/ModalButton";
 import LinkButton from '../LinkButton/LinkButton';
 import Logo from '../Logo/Logo';
+import Link from 'next/link';
 
 import styles from "./Footer.module.scss";
 const Footer = () => {
@@ -28,7 +29,7 @@ const Footer = () => {
             <div className={styles.bottom}>
                 <div className="container">
                     <div>
-                        <p>© Название. Все права защищены.</p>
+                        <Link href="/privacy-policy/" className={styles.privacy}>© Название. Все права защищены.</Link>
                         <Logo />
                         <LinkButton
                             buttonText="Разработано в Artway studio."

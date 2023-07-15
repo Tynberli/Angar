@@ -19,7 +19,7 @@
     >div>div{
         @apply flex justify-between items-center mobil:flex-col;
     }
-    p{
-        @apply text-[rgba(255,255,255,0.5)] text-[12px] leading-[18px] font-normal mobil:order-3 mobil:mt-[5px];
+    .privacy{
+        @apply text-[rgba(255,255,255,0.5)] text-[12px] leading-[18px] font-normal mobil:order-3 mobil:mt-[5px] hover:text-[#1A81FA] duration-500;
     }
 }
