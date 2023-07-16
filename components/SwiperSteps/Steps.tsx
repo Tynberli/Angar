@@ -30,15 +30,15 @@ export default function Steps() {
                     modules={[Navigation, Pagination]}
                     className={styles.mySwiper}>
                     {/* тут передаю данные для слайдера */}
-                    {stepData.map(({ title, descr, img }) => (
-                        <SwiperSlide key={title}>
+                    {stepData.map(({ title, descr, img }, index) => (
+                        <SwiperSlide key={index}>
                             {/* тут сам компонент контена */}
                             <Step key={title} title={title} descr={descr} img={img} />
 
                         </SwiperSlide>))}
                     {/* тут я вывожу описание для этапа */}
                     <div className={styles.step__descr}>
-                        {stepData.map(({ title }) => (<p key={title}>{title}</p>))}
+                        {stepData.map(({ title }, index) => (<p key={index}>{title}</p>))}
                     </div>
                 </Swiper>
             </div>
