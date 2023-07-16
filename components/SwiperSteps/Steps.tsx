@@ -1,15 +1,17 @@
+/* eslint-disable react/jsx-key */
 import React, { useRef, useState } from "react";
-// Import Swiper React components
+// импортируем свайпер
 import { Swiper, SwiperSlide } from "swiper/react";
-import Image from 'next/image';
-// Import Swiper styles
+// импортируем стили свайпера
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Step from "./Step/Step";//импортирую компонент контента в слайдере
+import { stepData } from './Step/Step.data'//импортирую  контент для слайдеров
 
-import styles from './Steps.module.scss';
+import styles from './Steps.module.scss';//общие стили для компонента 
 
-// import required modules
+// импорт модулей для свайпер
 import { Navigation, Pagination } from "swiper";
 
 export default function Steps() {
@@ -19,90 +21,24 @@ export default function Steps() {
                 <h2>Этапы постройки ангара</h2>
                 <Swiper
                     autoHeight={true}
-                    speed={2000}
-                    navigation={true}
+                    speed={2000}//
+                    navigation={true}//
                     pagination={{
                         clickable: true,
                         type: "progressbar",
                     }}
                     modules={[Navigation, Pagination]}
                     className={styles.mySwiper}>
-                    <SwiperSlide>
-                        <div>
-                            <div
-                                className={styles.descr__step}>
-                                <p>Возведение фундамента</p>
-                                <p>В зависимости от конструкции, на
-                                    данном этапе заливаются разные виды фундамента.</p>
-                            </div>
-                            <div className={styles.picture}>
-                                <Image width={940} height={320}
-                                    src="/step-1.webp" alt="Возведение фундамента" />
-                            </div>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div>
-                            <div
-                                className={styles.descr__step}>
-                                <p >Формирование каркаса</p>
-                                <p >На установленном фундаменте возводится основная конструкция каркаса.</p>
-                            </div>
-                            <div className={styles.picture}>
-                                <Image width={940} height={320}
-                                    src="/step-2.webp" alt="Формирование каркаса" />
-                            </div>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div>
-                            <div
-                                className={styles.descr__step}>
-                                <p >Обшивка</p>
-                                <p >На данном этапе на конструкцию ангара
-                                    закрепляется гидроизоляция, крепится профлист.</p>
-                            </div>
-                            <div className={styles.picture}>
-                                <Image width={940} height={320}
-                                    src="/step-3.webp" alt="Обшивка" />
-                            </div>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div>
-                            <div
-                                className={styles.descr__step}>
-                                <p>Доп.борудование: двери, ворота, окна</p>
-                                <p >Устанавлиевается дополнительное
-                                    оборудование и инженерные сети.</p>
-                            </div>
-                            <div className={styles.picture}>
-                                <Image width={940} height={320}
-                                    src="/step-4.webp" alt="Доп.борудование: двери, ворота, окна" />
-                            </div>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div>
-                            <div
-                                className={styles.descr__step}>
-                                <p >Утепление</p>
-                                <p >При необходимости, производится
-                                    дополнительное утепление готового ангара.</p>
-                            </div>
-                            <div className={styles.picture}>
-                                <Image width={940} height={320}
-                                    src="/step-5.webp" alt="Утепление" />
-                            </div>
-                        </div>
-                    </SwiperSlide>
+                    {/* тут передаю данные для слайдера */}
+                    {stepData.map(({ title, descr, img }) => (
+                        <SwiperSlide>
+                            {/* тут сам компонент контена */}
+                            <Step key={title} title={title} descr={descr} img={img} />
 
+                        </SwiperSlide>))}
+                    {/* тут я вывожу описание для этапа */}
                     <div className={styles.step__descr}>
-                        <p>Возведение фундамента</p>
-                        <p>Формирование каркаса</p>
-                        <p>Обшивка</p>
-                        <p>Доп.борудование: двери, ворота, окна</p>
-                        <p>Утепление</p>
+                        {stepData.map(({ title }) => (<p>{title}</p>))}
                     </div>
                 </Swiper>
             </div>

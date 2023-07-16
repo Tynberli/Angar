@@ -1,8 +1,7 @@
 .steps__angars{
-    @apply bg-[#1A81FA] p-[160px_0_180px_0] pad:p-[120px_0_120px_0] mobil:p-[80px_0_80px_0] text-[#ffffff];
+    @apply bg-[#1A81FA]/*  p-[160px_0_180px_0] pad:p-[120px_0_120px_0] mobil:p-[80px_0_80px_0] */ text-[#ffffff] bg-no-repeat h-[100vh] flex justify-center items-center;
     background-image: url('../../public/img-10.svg'),url('../../public/img-11.svg'),url('../../public/img-12.svg'),url('../../public/img-13.svg'); 
-	background-repeat: no-repeat; 
-	background-position: 34% 200px, 50% 170px, 69% 320px, 30% 350px;
+    background-position: 34% 200px, 50% 170px, 69% 320px, 30% 350px;
     @media (max-width: 768px){
             background-position: 90% 160px, 10% 200px, 105% 330px, -3% 375px;
     }
@@ -61,23 +60,6 @@
     left: 0;
     top: 0;
     position: static !important;
-}
-.descr__step{
-  @apply flex flex-col gap-[10px] max-w-fit p-[25px_25px_35px_30px] rounded-[5px] bg-[#3E97FF] mx-auto;
-  p{
-    &:not(:last-child){
-      @apply   font-bold;
-    }
-    &:not(:first-child){
-      @apply max-w-[389px];
-    }
-  }
-}
-.picture{
-  @apply flex justify-end mt-[93px] pad:mt-[60px] mobil:mt-[50px];
-  img{
-    @apply relative pad:left-[10%];
-  }
 }
 
 .step__descr{

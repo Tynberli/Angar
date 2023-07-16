@@ -27,20 +27,4 @@ const Layout: FC<PropsWithChildren<LayoutProps>> = ({
         </div>
     )
 }
-
-
-/* const Layout = ({ children }: { children: React.ReactNode }) => (
-
-    <>
-        <Head>
-            <title>{metaTitle} | Веб студия Artway</title>
-            <meta name="description" content={metaDescr} />
-            <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <link rel="shortcut icon" href="/favicon.ico" type="image/ico" />
-        </Head>
-        <Header />
-        {children}
-        <Footer />
-    </>
-); */
 export default Layout;

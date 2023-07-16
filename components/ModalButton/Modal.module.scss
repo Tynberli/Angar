@@ -2,5 +2,52 @@
     @apply  top-0 left-0 w-[100%] h-[100%] bg-[rgba(0,0,0,0.5)] fixed z-50 flex justify-center items-center;
 }
 .modal{
-    @apply   z-50  rounded-[5px] p-[40px_16px_35px_16px] bg-[#ffffff] border overflow-y-scroll max-h-[800px] notebook:max-h-[700px]  max-w-[360px] ;
+    @apply  relative z-50  rounded-[5px] p-[40px_16px_35px_16px] bg-[#ffffff] border overflow-y-scroll max-h-[800px] notebook:max-h-[700px]  max-w-[360px] ;
+}
+.closeButton{
+    @apply  absolute top-[16px] right-[16px];
+    &::hover{
+        svg{
+            path{
+                @apply stroke-[#d60f0f];
+            }
+        }
+    }
+}
+.form{
+    @apply  flex flex-col ;
+    label{
+        @apply text-[16px] leading-[21px] mt-[30px];
+    }
+
+    .gabarites{
+        @apply text-[16px] leading-[21px] mt-[15px] grid grid-cols-2 gap-[10px];
+        input{
+            @apply m-0
+        }
+    }
+
+    
+    .agreement{
+        @apply  relative flex gap-8 items-center mt-[35px] ;
+    }
+    .agreement_checkbox{ 
+        @apply top-[calc(50%-20px)] opacity-0 outline-none;
+    }
+    .agreement_title{ 
+        @apply text-[12px] leading-[16px] max-w-[283px] mb-[20px] before:content-[''] before:absolute before:w-[30px] before:bg-[#F5F5F5] 
+        before:h-[30px] before:left-0 duration-500 before:border-[1px] before:border-[#E0E0E0] before:rounded-[5px];
+    }
+    .agreement_checkbox:checked + 
+    .agreement-title::after {
+        content: url('../../public/checkbox.svg');
+        position: absolute;
+        left: 8px;
+        top: calc(50% - 18px);
+    }
+}
+
+.input{ 
+	@apply outline-none p-[16.5px_15px] text-[15px] leading-[19px] w-[100%] bg-[#F5F5F5] rounded-[5px] mt-[12px]
+ 	placeholder:text-[rgba(50,50,50,0.5)];
 }

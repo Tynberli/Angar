@@ -9,3 +9,9 @@
     }
   }
 }
+.picture{
+  @apply flex justify-end mt-[93px] pad:mt-[60px] mobil:mt-[50px];
+  img{
+    @apply relative pad:left-[10%];
+  }
+}

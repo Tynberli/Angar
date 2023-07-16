@@ -1,4 +1,5 @@
 import styles from "./Warming.module.scss";
+import Image from "next/image";
 const Warming = () => {
     return (
         <section id="warming" className="pt-[180px] pad:pt-[120px] mobil:pt-[80px] relative bg-[#F5F5F5]">
@@ -37,7 +38,7 @@ const Warming = () => {
                                         используемая для профнастила</p>
                                 </div>
                                 <div className="bg-[#ffffff] rounded-[5px] p-[25px_40px_35px_30px]  invis"
-                                       /*  style="transition: all 1.2s;" */>
+                                     >
                                     <p className="font-bold text-[20px] leading-[26px] ">Гидроизоляция</p>
                                     <p className="max-w-[283px] mt-[10px]">
                                         Описание материала в несколько строк, например модификация стали
@@ -45,8 +46,7 @@ const Warming = () => {
                                 </div>
                             </div>
                             <div className="relative">
-                                <img src="img/img-8-2.png" alt="" className="relative pad:left-[-20%] w-100% invis"
-                                        /* style="transition: all 1.5s;" */ />
+                                <Image width={1757} height={874} src="/img-8-2.webp" alt="" className="relative pad:left-[-20%] w-100% invis"/>
                                 <div
                                     className="bg-[#1A81FA] rounded-[50%] p-[6px] max-w-fit absolute top-[20px] left-[60%] hidden mobil:block">
                                     <div className="bg-[#FFFFFF] rounded-[50%] p-[10px_13.7px_9px_12px]"><svg width="7"
@@ -112,8 +112,7 @@ const Warming = () => {
                                         Описание материала в несколько строк, например модификация стали
                                         используемая для профнастила</p>
                                 </div>
-                                <div className="bg-[#ffffff] rounded-[5px] p-[25px_40px_35px_30px] invis"
-                                        /* style="transition: all 1.3s;" */>
+                                <div className="bg-[#ffffff] rounded-[5px] p-[25px_40px_35px_30px] invis">
                                     <p className="font-bold text-[20px] leading-[26px] ">Утеплитель</p>
                                     <p className="max-w-[283px] mt-[10px]">
                                         Описание материала в несколько строк, например модификация стали
@@ -121,8 +120,7 @@ const Warming = () => {
                                 </div>
                             </div>
                             <div className="relative">
-                                <img src="img/img-8.png" alt="" className="relative pad:left-[-20%] w-100% invis"
-                                        /* style="transition: all 1.5s;" */ />
+                                <Image width={1757} height={874}  src="/img-8.webp" alt="" className="relative pad:left-[-20%] w-100% invis"/>
                                 <div
                                     className="bg-[#1A81FA] rounded-[50%] p-[6px] max-w-fit absolute top-[20px] left-[60%] hidden mobil:block">
                                     <div className="bg-[#FFFFFF] rounded-[50%] p-[10px_13.7px_9px_12px]"><svg width="7"
@@ -158,8 +156,7 @@ const Warming = () => {
                                 </div>
                             </div>
                             <div className="bg-[#1A81FA] absolute rounded-[50%] p-[6px] max-w-fit top-[300px] left-[200px] pad:top-[150px] pad:left-[100px]
-                                     netbook:top-[200px] netbook:left-[230px] mobil:hidden invis"
-                                    /* style="transition: all 1.5s;" */>
+                                     netbook:top-[200px] netbook:left-[230px] mobil:hidden invis">
                                 <div className="bg-[#ffffff] h-[12px] w-[12px] rounded-[50%] relative">
                                     <p
                                         className="bg-[#ffffff] p-[17px_40px_17px_30px] font-bold text-[20px] leading-[26px] 
@@ -168,8 +165,7 @@ const Warming = () => {
                                 </div>
                             </div>
                             <div className="bg-[#1A81FA] absolute rounded-[50%] p-[6px] max-w-fit top-[180px] left-[700px]
-                                     netbook:left-[330px] netbook:top-[30px] pad:left-[15%] pad:top-[30px]  mobil:hidden invis"
-                                    /* style="transition: all 1.5s;" */>
+                                     netbook:left-[330px] netbook:top-[30px] pad:left-[15%] pad:top-[30px]  mobil:hidden invis">
                                 <div className="bg-[#ffffff] h-[12px] w-[12px] rounded-[50%] relative">
                                     <div className="bg-[#ffffff]  absolute  z-20 top-[-200px] netbook:top-0 pad:top-[-60px] left-[20px] pad:left-[40px] rounded-[5px]
                                              p-[25px_40px_35px_30px] ">
@@ -181,7 +177,7 @@ const Warming = () => {
                                 </div>
                             </div>
                             <div className="bg-[#1A81FA] absolute rounded-[50%] p-[6px] max-w-fit top-[280px] left-[650px] pad:top-[180px]
-                                     pad:left-[50%]  mobil:hidden invis" /* style="transition: all 1.5s;" */>
+                                     pad:left-[50%]  mobil:hidden invis">
                                 <div className="bg-[#ffffff] h-[12px] w-[12px] rounded-[50%] relative">
                                     <p className="bg-[#ffffff] p-[17px_40px_17px_30px] font-bold text-[20px] leading-[26px]
                                              rounded-[5px] absolute top-[30px] left-[10px]">
