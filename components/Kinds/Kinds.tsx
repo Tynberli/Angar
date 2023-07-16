@@ -11,7 +11,7 @@ const TabSection = () => {
 
   return (
     <div>
-      <div className="tabs">
+      {/* <div className="tabs">
         {tabData.map((tab, index) => (
           <Tab
             key={index}
@@ -21,7 +21,7 @@ const TabSection = () => {
             title={tab.title}
           />
         ))}
-      </div>
+      </div> */}
       <div className="tab-content">
         <img src={tabData[activeTab].image} alt={tabData[activeTab].title} />
         <p>{tabData[activeTab].text}</p>

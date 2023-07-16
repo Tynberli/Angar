@@ -1,5 +1,3 @@
-
-import React, { useRef, useState } from "react";
 // импортируем свайпер
 import { Swiper, SwiperSlide } from "swiper/react";
 // импортируем стили свайпера
