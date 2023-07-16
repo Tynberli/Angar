@@ -1,4 +1,4 @@
-/* eslint-disable react/jsx-key */
+
 import React, { useRef, useState } from "react";
 // импортируем свайпер
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -31,14 +31,14 @@ export default function Steps() {
                     className={styles.mySwiper}>
                     {/* тут передаю данные для слайдера */}
                     {stepData.map(({ title, descr, img }) => (
-                        <SwiperSlide>
+                        <SwiperSlide key={title}>
                             {/* тут сам компонент контена */}
                             <Step key={title} title={title} descr={descr} img={img} />
 
                         </SwiperSlide>))}
                     {/* тут я вывожу описание для этапа */}
                     <div className={styles.step__descr}>
-                        {stepData.map(({ title }) => (<p>{title}</p>))}
+                        {stepData.map(({ title }) => (<p key={title}>{title}</p>))}
                     </div>
                 </Swiper>
             </div>
