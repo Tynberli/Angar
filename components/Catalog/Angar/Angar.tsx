@@ -12,7 +12,6 @@ type AngarCardProps = {
   price: string;
   installation: string;
   image: string;
-  // Добавьте остальные значения, необходимые для карточки ангара
 };
 
 const AngarCard: React.FC<AngarCardProps> = ({ title, height, width, long, price, installation, image,  }) => {

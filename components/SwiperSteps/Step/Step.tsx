@@ -16,8 +16,7 @@ const Step: React.FC<StepProps> = ({ title, descr, img }) => {
                 <p>{descr}</p>
             </div>
             <div className={styles.picture}>
-                <Image width={940} height={320}
-                    src={img} alt={title} />
+                <Image width={940} height={320} src={img} alt={title} />
             </div>
         </>
     )

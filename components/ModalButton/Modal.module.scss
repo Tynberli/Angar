@@ -6,7 +6,7 @@
 }
 .closeButton{
     @apply  absolute top-[16px] right-[16px];
-    &::hover{
+    &:hover{
         svg{
             path{
                 @apply stroke-[#d60f0f];
