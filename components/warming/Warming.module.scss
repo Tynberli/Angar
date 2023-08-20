@@ -1,0 +1,29 @@
+.warming {
+  @apply pt-[180px] pad:pt-[120px] mobil:pt-[80px] relative bg-[#F5F5F5];
+  .decor {
+    @apply absolute w-[100%] h-[100%] top-0 pointer-events-none z-10 ;
+    background-image: url('../../public/img-7.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    mix-blend-mode: screen;
+    -webkit-mix-blend-mode: screen;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+
+  .descr {
+    @apply text-[28px] leading-[39px] mobil:text-[22px] mobil:leading-[29px] max-w-[920px] text-center mx-auto relative z-10;
+  }
+
+  .wrapper {
+    @apply flex flex-col items-center mt-[60px];
+    .buttons{
+      @apply flex items-center p-[5px] rounded-[5px]  max-w-fit relative z-10 bg-[#ffffff];
+      button{
+        @apply flex items-center gap-[10px] text-left p-[23.5px_35px] mobil:p-[15px_20px]
+        rounded-[5px] whitespace-nowrap duration-500;
+
+      }
+    }
+  }
+}

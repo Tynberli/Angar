@@ -1,0 +1,63 @@
+.angars {
+  @apply pt-[185px] pb-[100px] pad:pt-[120px] mobil:pt-[80px];
+
+  .tabs {
+    @apply flex flex-col;
+    .top {
+      @apply flex justify-between pad:flex-wrap netbook:gap-[40px] pad:gap-[45px] ;
+      .descr {
+        @apply flex flex-col gap-5;
+        h2 {
+          @apply max-w-[372px] pad:max-w-[100%];
+        }
+
+        p {
+          @apply max-w-[328px] leading-[25px] pad:max-w-[100%];
+        }
+      }
+
+      .buttons {
+        @apply flex flex-col gap-[10px]  text-[28px] leading-[39px] mobil:text-[20px] mobil:leading-[28px] whitespace-nowrap ;
+        button {
+          @apply flex items-center gap-[10px] text-left text-[rgba(50,50,50,0.4)] duration-500;
+          div {
+            @apply w-[10px] h-[3px] bg-[#1A81FA] hidden;
+          }
+
+          &.active {
+            color: red;
+
+            div {
+              @apply block;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  .tab {
+    @apply flex pad:flex-col mt-[40px] gap-[20px];
+    .img {
+      @apply flex-[65%] ;
+      img {
+        @apply relative;
+      }
+    }
+
+    ul {
+      @apply grid grid-cols-2 flex-[35%] mobil:grid-cols-1;
+      li {
+        @apply flex gap-[12px] items-start col-span-2 pad:col-span-1 max-h-fit;
+        img {
+
+        }
+
+        p {
+          @apply font-bold max-w-[340px] pad:max-w-[302px];
+        }
+      }
+    }
+  }
+}

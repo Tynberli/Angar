@@ -3,7 +3,7 @@
  }
 .footerPhone {
     @apply  text-[70px] leading-[91px] pad:text-[50px] pad:leading-[60px]  /* mobil:text-[36px] mobil:leading-[40px] */
-     text-[#323232] hover:text-[#1A81FA] duration-500 whitespace-nowrap mt-[10px];
+     hover:text-[#1A81FA] duration-500 whitespace-nowrap mt-[10px];
      @media (max-width: 480px) {
         font-size: 35px;
         line-height: 40px;
