@@ -15,7 +15,7 @@ const Header = () => {
     const spy = true;
     const smooth = true;
     const offset = 140;
-    const duration = 500;
+    const duration = 1500;
     const currentMenuItemClass = isMobil ? stylesMenu.menu__item : styles.nav__item;
 
     const handleToggleMenu = () => {

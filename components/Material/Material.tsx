@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 import styles from './Material.module.scss';
 
 // import required modules
-import { Navigation, Pagination } from "swiper";
+import { Navigation, Pagination, Autoplay } from "swiper";
 
 export default function Material() {
     return (
@@ -19,11 +19,13 @@ export default function Material() {
                 autoHeight={true}
                 speed={2000}
                 navigation={true}
+                spaceBetween={20}
+                autoplay={true}
                 pagination={{
                     clickable: true,
                     type: "progressbar",
                 }}
-                modules={[Navigation, Pagination]}
+                modules={[Navigation, Pagination, Autoplay]}
                 className={styles.mySwiper}>
                 <SwiperSlide>
                     <div className="container ">

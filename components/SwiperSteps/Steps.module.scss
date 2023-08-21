@@ -1,70 +1,37 @@
-.steps__angars{
-    @apply bg-[#1A81FA]/*  p-[160px_0_180px_0] pad:p-[120px_0_120px_0] mobil:p-[80px_0_80px_0] */ text-[#ffffff] bg-no-repeat h-[100vh] flex justify-center items-center;
-    background-image: url('../../public/img-10.svg'),url('../../public/img-11.svg'),url('../../public/img-12.svg'),url('../../public/img-13.svg'); 
-    background-position: 34% 200px, 50% 170px, 69% 320px, 30% 350px;
-    @media (max-width: 768px){
-            background-position: 90% 160px, 10% 200px, 105% 330px, -3% 375px;
-    }
-    @media (max-width: 480px){
-            background-image: url('../../public/img-11.svg'),url('../../public/img-12.svg'),url('../../public/img-13.svg'); 
-            background-position:  -12% 20px, 105% 125px, 5% 320px;
-    }
-    h2{
-        @apply  text-center ;
-    }
-    img{
-        @apply justify-center
-    }
+.steps__angars {
+  @apply bg-[#1A81FA]/*  p-[160px_0_180px_0] pad:p-[120px_0_120px_0] mobil:p-[80px_0_80px_0] */
+  text-[#ffffff] bg-no-repeat h-[100vh] flex justify-center items-center;
+  background-image: url('../../public/img-10.svg'), url('../../public/img-11.svg'), url('../../public/img-12.svg'), url('../../public/img-13.svg');
+  background-position: 34% 200px, 50% 170px, 69% 320px, 30% 350px;
+  @media (max-width: 768px) {
+    background-position: 90% 160px, 10% 200px, 105% 330px, -3% 375px;
+  }
+  @media (max-width: 480px) {
+    background-image: url('../../public/img-11.svg'), url('../../public/img-12.svg'), url('../../public/img-13.svg');
+    background-position: -12% 20px, 105% 125px, 5% 320px;
+  }
+
+  h2 {
+    @apply text-center ;
+  }
+
+  img {
+    @apply justify-center
+  }
 }
+
 .swiper-button-next {
-    @apply static w-[60px] h-[60px] rounded-[50%] p-[25px_27px]  after:hidden duration-500 bg-[#3E97FF];
+  @apply static w-[60px] h-[60px] rounded-[50%] p-[25px_27px]  after:hidden duration-500 bg-[#3E97FF];
 }
 
-.mySwiper{
-    @apply relative mt-[40px];
+.mySwiper {
+  @apply relative mt-[40px];
 
-     .swiper-pagination-progressbar-fill{
-        background: rgb(255, 255, 255) !important;
-      }
-      .swiper-button-next {
-        @apply static w-[60px] h-[60px] rounded-[50%] p-[25px_27px]  after:hidden duration-500 bg-[#3E97FF];
-    }
-}
-.swiper {
-    width: 100%;
-    height: auto;
-    background: #000 !important;
-  }
-  
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-  }
-  
-  .swiper .swiper-slide {
-    height: 300px;
-    line-height: 300px;
-  }
-  
-  .swiper .swiper-slide:nth-child(2n) {
-    height: 500px;
-    line-height: 500px;
-  }
-  .swiper-pagination .swiper-pagination-progressbar .swiper-pagination-horizontal{
-    background: rgb(255, 255, 255) !important;
-  }
-  .swiper-horizontal>.swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal, .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite, .swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
-    width: 100%;
-    height: var(--swiper-pagination-progressbar-size,4px);
-    left: 0;
-    top: 0;
-    position: static !important;
 }
 
-.step__descr{
+.step__descr {
   @apply flex justify-between mt-[30px] pad:hidden;
-  p{
+  p {
     @apply max-w-[160px]
   }
 }

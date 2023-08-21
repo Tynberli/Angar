@@ -1,68 +1,73 @@
 @font-face {
-    font-family: 'Panton';
-    src: url('/fonts/Panton-BoldItalic.eot');
-    src: local('Panton Bold Italic'), local('Panton-BoldItalic'),
-        url('/fonts/Panton-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/Panton-BoldItalic.woff2') format('woff2'),
-        url('/fonts/Panton-BoldItalic.woff') format('woff'),
-        url('/fonts/Panton-BoldItalic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
+  font-family: 'Panton';
+  src: url('/fonts/Panton-BoldItalic.eot');
+  src: local('Panton Bold Italic'), local('Panton-BoldItalic'),
+  url('/fonts/Panton-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Panton-BoldItalic.woff2') format('woff2'),
+  url('/fonts/Panton-BoldItalic.woff') format('woff'),
+  url('/fonts/Panton-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
 }
+
 @font-face {
-    font-family: 'Panton';
-    src: url('/fonts/Panton-SemiBold.eot');
-    src: local('Panton SemiBold'), local('Panton-SemiBold'),
-        url('/fonts/Panton-SemiBold.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/Panton-SemiBold.woff2') format('woff2'),
-        url('/fonts/Panton-SemiBold.woff') format('woff'),
-        url('/fonts/Panton-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
+  font-family: 'Panton';
+  src: url('/fonts/Panton-SemiBold.eot');
+  src: local('Panton SemiBold'), local('Panton-SemiBold'),
+  url('/fonts/Panton-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Panton-SemiBold.woff2') format('woff2'),
+  url('/fonts/Panton-SemiBold.woff') format('woff'),
+  url('/fonts/Panton-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
 }
+
 @font-face {
-    font-family: 'Panton';
-    src: url('/fonts/Panton-SemiBoldItalic.eot');
-    src: local('Panton SemiBold Italic'), local('Panton-SemiBoldItalic'),
-        url('/fonts/Panton-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/Panton-SemiBoldItalic.woff2') format('woff2'),
-        url('/fonts/Panton-SemiBoldItalic.woff') format('woff'),
-        url('/fonts/Panton-SemiBoldItalic.ttf') format('truetype');
-    font-weight: 600;
-    font-style: italic;
+  font-family: 'Panton';
+  src: url('/fonts/Panton-SemiBoldItalic.eot');
+  src: local('Panton SemiBold Italic'), local('Panton-SemiBoldItalic'),
+  url('/fonts/Panton-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Panton-SemiBoldItalic.woff2') format('woff2'),
+  url('/fonts/Panton-SemiBoldItalic.woff') format('woff'),
+  url('/fonts/Panton-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
 }
+
 @font-face {
-    font-family: 'Panton';
-    src: url('/fonts/Panton-Bold.eot');
-    src: local('Panton Bold'), local('Panton-Bold'),
-        url('/fonts/Panton-Bold.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/Panton-Bold.woff2') format('woff2'),
-        url('/fonts/Panton-Bold.woff') format('woff'),
-        url('/fonts/Panton-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+  font-family: 'Panton';
+  src: url('/fonts/Panton-Bold.eot');
+  src: local('Panton Bold'), local('Panton-Bold'),
+  url('/fonts/Panton-Bold.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Panton-Bold.woff2') format('woff2'),
+  url('/fonts/Panton-Bold.woff') format('woff'),
+  url('/fonts/Panton-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
 }
+
 @font-face {
-    font-family: 'Panton';
-    src: url('/fonts/Panton-Regular.eot');
-    src: local('Panton'), local('Panton-Regular'),
-        url('/fonts/Panton-Regular.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/Panton-Regular.woff2') format('woff2'),
-        url('/fonts/Panton-Regular.woff') format('woff'),
-        url('/fonts/Panton-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Panton';
+  src: url('/fonts/Panton-Regular.eot');
+  src: local('Panton'), local('Panton-Regular'),
+  url('/fonts/Panton-Regular.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Panton-Regular.woff2') format('woff2'),
+  url('/fonts/Panton-Regular.woff') format('woff'),
+  url('/fonts/Panton-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
+
 @font-face {
-    font-family: 'Panton';
-    src: url('/fonts/Panton-RegularItalic.eot');
-    src: local('Panton Regular Italic'), local('Panton-RegularItalic'),
-        url('/fonts/Panton-RegularItalic.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/Panton-RegularItalic.woff2') format('woff2'),
-        url('/fonts/Panton-RegularItalic.woff') format('woff'),
-        url('/fonts/Panton-RegularItalic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
+  font-family: 'Panton';
+  src: url('/fonts/Panton-RegularItalic.eot');
+  src: local('Panton Regular Italic'), local('Panton-RegularItalic'),
+  url('/fonts/Panton-RegularItalic.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Panton-RegularItalic.woff2') format('woff2'),
+  url('/fonts/Panton-RegularItalic.woff') format('woff'),
+  url('/fonts/Panton-RegularItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
 }
 
 @tailwind base;
@@ -71,91 +76,198 @@
 
 @layer base {
 
- /*Обнуление*/
-*{
-	padding: 0;
-	margin: 0;
-}
-*,*:before,*:after{
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-}
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
+  /*Обнуление*/
+  * {
+    padding: 0;
+    margin: 0;
+  }
 
-nav,footer,header,aside{display: block;}
+  *, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 
-html,body{
-	height: auto;
-	width: 100%;
-	font-size: 100%;
-	line-height: 1;
-	font-size: 14px;
-	-ms-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
-}
-input,button,textarea{font-family:inherit;}
+  :focus, :active {
+    outline: none;
+  }
 
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner {padding:0;border:0;}
-a, a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul li{list-style: none;}
-img{vertical-align: top;}
-a{
-	display: inline-block;
-}
-select{
-	-webkit-appearance: none;
+  a:focus, a:active {
+    outline: none;
+  }
+
+  nav, footer, header, aside {
+    display: block;
+  }
+
+  html, body {
+    height: auto;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  input, button, textarea {
+    font-family: inherit;
+  }
+
+  input::-ms-clear {
+    display: none;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+
+  a, a:visited {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  ul li {
+    list-style: none;
+  }
+
+  img {
+    vertical-align: top;
+  }
+
+  a {
+    display: inline-block;
+  }
+
+  select {
+    -webkit-appearance: none;
     -moz-appearance: none;
-}
-/* html{
-	scroll-behavior: smooth;
-} */
+  }
 
-body{
-	font-family: 'Panton';
-	font-weight: 600;/* основное начертание */
-	background-color: #FFFFFF;/* цвет боди */
-	color: #323232;/* основной цвет текста */
-	font-size: 18px;/* основной размер шрифта */
-	line-height: 23px;/* основноая величина между строками */
-	position: relative;
+  /* html{
+      scroll-behavior: smooth;
+  } */
+  body {
+    font-family: 'Panton';
+    font-weight: 600; /* основное начертание */
+    background-color: #FFFFFF; /* цвет боди */
+    color: #323232; /* основной цвет текста */
+    font-size: 18px; /* основной размер шрифта */
+    line-height: 23px; /* основноая величина между строками */
+    position: relative;
     overflow-x: hidden;
-}
-@media (max-width: 480px){
-	body{
-		font-size: 16px;/* основной размер шрифта */
-		line-height: 21px;/* основноая величина между строками */
-	}
-}
-h2{
+  }
+
+  @media (max-width: 480px) {
+    body {
+      font-size: 16px; /* основной размер шрифта */
+      line-height: 21px; /* основноая величина между строками */
+    }
+  }
+  h2 {
     @apply text-[34px] leading-[41px] mobil:text-[28px] mobil:leading-[34px] font-bold ;
-}
-h3{
+  }
+
+  h3 {
     @apply text-[28px] leading-[36px] mobil:text-[22px] mobil:leading-[29px];
-}
-h4{
+  }
+
+  h4 {
     @apply text-[20px] leading-[28px];
+  }
+
+  .fixed-page {
+    overflow: hidden; /* класс на боди при открытии модалки */
+  }
+
+  .container {
+    max-width: 1170px !important;
+    padding: 0 30px !important;
+    margin: 0 auto !important;
+  }
+
+  .mySwiper {
+    .swiper-pagination {
+      position: static !important;
+    }
+
+    .swiper-pagination-progressbar {
+      position: static !important;
+    }
+  }
 }
-.fixed-page {
-	overflow: hidden;/* класс на боди при открытии модалки */
+//TODO пока лучшего решения не нашел
+#steps {
+  .swiper-button-prev,
+  .swiper-button-next {
+    @apply w-[60px] h-[60px] rounded-[50%] p-[25px_27px] after:hidden duration-500 bg-[#3E97FF] mobil:hidden;
+  }
+
+  .swiper-button-prev {
+    background-image: url('../../public/prev.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .swiper-button-next {
+    background-image: url('../../public/next.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .swiper-button-disabled {
+    opacity: 0;
+  }
+
+  .swiper-pagination-progressbar {
+    margin-top: 30px;
+    background-color: #3E97FF;
+    position: static !important;
+
+    .swiper-pagination-progressbar-fill {
+      background-color: #f1f1f1 !important;
+    }
+  }
 }
 
-.container{
-	max-width: 1170px !important;
-	padding: 0 30px !important;
-	margin: 0 auto !important;
-}
-.mySwiper{
-    .swiper-pagination{
-        position: static !important;
-    }
-    .swiper-pagination-progressbar{
-        position: static !important;
+#material {
+  .swiper-button-prev,
+  .swiper-button-next {
+    @apply w-[60px] h-[60px] rounded-[50%] p-[25px_27px] after:hidden duration-500 bg-[#434343] mobil:hidden;
+  }
+
+  .swiper-button-prev {
+    background-image: url('../../public/prev.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .swiper-button-next {
+    background-image: url('../../public/next.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .swiper-button-disabled {
+    opacity: 0;
+  }
+
+  .swiper-pagination-progressbar {
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, .25);
+    position: static !important;
+//
+    .swiper-pagination-progressbar-fill {
+      background-color: #1A81FA !important;
     }
   }
 }

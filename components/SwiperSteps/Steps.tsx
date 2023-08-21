@@ -1,16 +1,16 @@
 // импортируем свайпер
-import { Swiper, SwiperSlide } from "swiper/react";
+import {Swiper, SwiperSlide} from "swiper/react";
 // импортируем стили свайпера
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Step from "./Step/Step";//импортирую компонент контента в слайдере
-import { stepData } from './Step/Step.data'//импортирую  контент для слайдеров
+import {stepData} from './Step/Step.data'//импортирую  контент для слайдеров
 
 import styles from './Steps.module.scss';//общие стили для компонента 
 
 // импорт модулей для свайпер
-import { Navigation, Pagination } from "swiper";
+import {Navigation, Pagination, Autoplay} from "swiper";
 
 export default function Steps() {
     return (
@@ -21,22 +21,25 @@ export default function Steps() {
                     autoHeight={true}
                     speed={2000}//
                     navigation={true}//
+                    spaceBetween={20}
+                    autoplay={true}
+
                     pagination={{
                         clickable: true,
                         type: "progressbar",
                     }}
-                    modules={[Navigation, Pagination]}
+                    modules={[Navigation, Pagination, Autoplay]}
                     className={styles.mySwiper}>
                     {/* тут передаю данные для слайдера */}
-                    {stepData.map(({ title, descr, img }, index) => (
+                    {stepData.map(({title, descr, img}, index) => (
                         <SwiperSlide key={index}>
                             {/* тут сам компонент контена */}
-                            <Step key={title} title={title} descr={descr} img={img} />
+                            <Step key={title} title={title} descr={descr} img={img}/>
 
                         </SwiperSlide>))}
                     {/* тут я вывожу описание для этапа */}
                     <div className={styles.step__descr}>
-                        {stepData.map(({ title }, index) => (<p key={index}>{title}</p>))}
+                        {stepData.map(({title}, index) => (<p key={index}>{title}</p>))}
                     </div>
                 </Swiper>
             </div>

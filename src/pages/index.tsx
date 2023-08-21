@@ -17,7 +17,7 @@ export default function Home() {
                     <AngarFilter/>
                     <Material/>
                     <Angars/>
-                    <Warming/>
+                   {/* <Warming/>*/}
 
                     <Steps/>
                 </main>
