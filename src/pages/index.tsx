@@ -10,14 +10,15 @@ import Layout from '@/../components/Layout/Layout';
 export default function Home() {
     return (
         <>
-            <Layout metaTitle={'123'} metaDescr='asd'>
+            <Layout metaTitle={'Изготовление ангаров любой сложности | Profi Angar'}
+                    metaDescr='Изготавливаем ангары под ключ с прочным каркасом и возможностью утепления. Прямостенные и двухскатные конструкции, а также индивидуальные решения по вашим требованиям.'>
                 <main>
                     <Hero/>
                     <Advantages/>
                     <AngarFilter/>
                     <Material/>
                     <Angars/>
-                   {/* <Warming/>*/}
+                    <Warming/>
 
                     <Steps/>
                 </main>

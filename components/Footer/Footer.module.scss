@@ -16,7 +16,7 @@
 }
 .bottom{
     @apply bg-[#323232] py-[31px] mobil:py-[45px];
-    >div>div{
+    .copyright{
         @apply flex justify-between items-center mobil:flex-col;
     }
     .privacy{

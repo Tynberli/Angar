@@ -16,8 +16,9 @@
 .nav__link{
     @apply hover:text-[#ffffff] relative after:opacity-0 hover:after:opacity-[1] duration-500 after:absolute after:content-[''] after:bg-[#1A81FA]
     after:h-[2px] after:w-[8px] after:bottom-[-10px] after:left-[45%] after:duration-500 whitespace-nowrap pad:after:left-[-15px]
-    pad:after:bottom-[50%];
+    pad:after:bottom-[50%]  ;
 }
+
 .burger{
     @apply relative z-10 bg-[#434343] rounded-[5px] cursor-pointer duration-500 w-[54px] h-[40px] mobil:w-[44px] mobil:h-[34px];
     span{

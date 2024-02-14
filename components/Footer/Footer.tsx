@@ -28,7 +28,7 @@ const Footer = () => {
             </div>
             <div className={styles.bottom}>
                 <div className="container">
-                    <div>
+                    <div className={styles.copyright}>
                         <Link href="/privacy-policy/" className={styles.privacy}>© Название. Все права защищены.</Link>
                         <Logo />
                         <LinkButton

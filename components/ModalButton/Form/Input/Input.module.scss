@@ -1,0 +1,10 @@
+
+.input{
+  @apply outline-none p-[16.5px_15px] text-[15px] leading-[19px] w-[100%] bg-[#F5F5F5] rounded-[5px] mt-[12px]
+  placeholder:text-[rgba(50,50,50,0.5)];
+
+}
+.input[type=submit] {
+  @apply mt-[40px] text-[#ffffff] bg-[#1A81FA] rounded-[100px] p-[20px_35px] hover:bg-[#ffffff]
+  hover:text-[#1A81FA] border border-[#1A81FA] hover:border-[#1A81FA] duration-500 cursor-pointer;
+}
